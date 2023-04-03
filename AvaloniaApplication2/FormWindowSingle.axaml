@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.FormWindowSingle"
+        Title="FormWindowSingle">
+    <StackPanel>
+        <StackPanel
+            Margin="5, 2, 0 , 0">
+        <Button
+            Click="BackToMenu">Назад</Button>
+        </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock>Форма записи на посещение мероприятия</TextBlock>
+        </StackPanel>
+
+    
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock>информация для пропуска</TextBlock>
+                <TextBlock >Срок действия заявки:</TextBlock>
+                <TextBlock>c*</TextBlock>
+                <TextBlock>по</TextBlock>
+                <TextBlock>Цель посещения:</TextBlock>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>Принимающая сторона</TextBlock>
+                <TextBlock>Подразделение*</TextBlock>
+                <TextBlock>ФИО*</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <StackPanel></StackPanel>
+                <StackPanel></StackPanel>
+                <StackPanel></StackPanel>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+        </StackPanel>
+        
+        
+    </StackPanel>
+    
+</Window>

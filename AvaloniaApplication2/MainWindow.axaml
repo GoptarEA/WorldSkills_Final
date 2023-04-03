@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.MainWindow"
+        Title="Дом техники"
+        Width="600"
+        Height="600"
+        MinHeight="600"
+        MaxHeight="700"
+        MinWidth="600"
+        MaxWidth="700"
+        Background="#69cde7">
+    
+    <StackPanel Orientation="Vertical">
+        <TextBlock
+            TextAlignment="Center"
+            Margin="0, 100, 0, 0"
+            Foreground="white"
+            FontSize="36"
+            FontFamily="Comic Sans MS"
+            >Войти
+        </TextBlock>
+        <TextBox
+            Watermark="Логин"
+            UseFloatingWatermark="True"
+            Margin="75, 35, 75, 0"
+            Background="white"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            CornerRadius="10">
+        </TextBox>
+        <TextBox
+            Watermark="Пароль"
+            UseFloatingWatermark="True"
+            Margin="75, 35, 75, 0"
+            Background="white"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            CornerRadius="10">
+        </TextBox>
+        <Button
+            Margin="10, 45, 10, 0"
+            Background="blue"
+            CornerRadius="15"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            Foreground="white"
+            Width="300"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Click="Button_OnClick"
+            >Войти</Button>
+        
+        
+        
+    </StackPanel>
+    
+    
+    
+      
+    
+</Window>

@@ -1,0 +1,146 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.FormWindowGroup"
+        Title="FormWindow"
+        Width="1300"
+        Height="1000"
+        MinHeight="1000"
+        MaxHeight="1000"
+        MinWidth="1300"
+        MaxWidth="1300">
+        <StackPanel>
+                
+                
+                <StackPanel>
+                </StackPanel>
+                
+                
+                <StackPanel HorizontalAlignment="Center">
+                        <TextBlock>Форма записи на посещение мероприятия</TextBlock>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                <StackPanel Background="#EEE"
+                            Width="500"
+                            Height="200"
+                            Margin="75, 20, 0, 0"
+                            HorizontalAlignment="Center"
+                            >
+                <TextBlock>информация для пропуска</TextBlock>
+                <TextBlock >Срок действия заявки:</TextBlock>
+                <TextBlock>c*</TextBlock>
+                <TextBlock>по</TextBlock>
+                <TextBlock>Цель посещения:</TextBlock>
+                <CalendarDatePicker
+                        Width="100"
+                        Height="20"
+                        CornerRadius="10"></CalendarDatePicker>
+                <CalendarDatePicker
+                        Width="100"
+                        Height="20"
+                        CornerRadius="10"></CalendarDatePicker>
+                        </StackPanel>
+                
+                
+                        <StackPanel 
+                                Background="#EEE"
+                                Width="600"
+                                Height="200"
+                                Margin="50, 20, 0, 0"
+                                >
+                                <TextBlock>Принимающая сторона</TextBlock>
+                                <TextBlock>Подразделение*</TextBlock>
+                                <TextBlock>ФИО*</TextBlock>
+                                <TextBox></TextBox>
+                        </StackPanel>
+                </StackPanel>
+                
+                
+                        <StackPanel Orientation="Horizontal">
+                                <StackPanel Background="#EEE"
+                                            Width="600"
+                                            Height="400">
+                                        <StackPanel Orientation="Vertical"
+                                                    Margin="1, 5,0,0">
+                                                 <TextBlock>Информация о посетителе</TextBlock>
+                                                <TextBlock>Фамиилия*:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Имя*:</TextBlock>                                                
+                                                <TextBox Width="150"
+                                                        Height="20"
+                                                        Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Отчество*:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Телефон:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>E-mail:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                        </StackPanel>
+                                       
+                                        <StackPanel Orientation="Vertical" Spacing="30">
+                                                <TextBlock>Организация:</TextBlock>                                      
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="9, 1, 800, 0"></TextBox>
+                                                <TextBlock>Примечание:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Дата рождения:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Серия:</TextBlock>
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <TextBlock>Номер:</TextBlock>                                   
+                                                <TextBox Width="150"
+                                                         Height="20"
+                                                         Margin="10, 3, 800, 0"></TextBox>
+                                                <Button>Добавить посетителя</Button>
+                                        </StackPanel>
+                                               
+                                </StackPanel>
+                                
+                                <StackPanel Background="#EEE"
+                                            Margin="50, 10, 0, 0"
+                                            Width="500"
+                                            Height="400">
+                                        <TextBlock>Список посетителей</TextBlock>
+                                </StackPanel>
+                        </StackPanel>
+                
+                
+                        <StackPanel Orientation="Horizontal">
+                                <StackPanel Background="#EEE"
+                                            Margin="20, 15, 0, 0"
+                                            Width="400"
+                                            Height="100">
+                                        <TextBlock>Прикрепляемые документы</TextBlock>
+                                        <Button>Прикрепить файл</Button>
+                                        <Button Margin="600, 10, 0,0">Очистить форму</Button>
+                                        <Button Margin="15, 0,0,0">Оформить заявку</Button>
+                                </StackPanel>
+                        </StackPanel>
+                
+
+                        <StackPanel
+                        Margin="5, 2, 0 , 0">
+                        <Button
+                                Click="BackToMenu">Назад</Button>
+                        </StackPanel>
+        </StackPanel>
+        
+</Window>
